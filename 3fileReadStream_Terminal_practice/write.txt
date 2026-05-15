@@ -1,0 +1,6 @@
+[MATCH #1] Line 1: On a cold winter  morning, we set out to climb the hill on our village. (Search: village)
+[MATCH #2] Line 6: It was a day well spent in that village. (Search: village)
+[MATCH #1] Line 1: On a cold winter  morning, we set out to climb the hill on our village. (Search: out)
+[MATCH #1] Line 2: The hill was covered trees. It has a temple at the top. (Search: top)
+[MATCH #2] Line 4: The climb was steep, but the three of us reache the top in no time. (Search: top)
+[MATCH #3] Line 5: It was a lovely view from the top. By evening we come down. (Search: top)
