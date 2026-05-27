@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "node -r ts-node/register --env-file=.env.development server.ts",
+    "start": "node -r ts-node/register --env-file=.env.production server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "type": "module"
+}
