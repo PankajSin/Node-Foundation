@@ -1,0 +1,17 @@
+==================================================
+       LOG ANALYSIS SYSTEM SUMMARY REPORT
+==================================================
+Scan Status:    ABORTED BY USER
+Target File:    story.txt
+Physical Size:  5.00 GB (5368709417 bytes)
+Search Target:  "There was a certain fairy, that was fond of changing herself into
+animal forms. She did this, to learn their language and ways, and
+ideas."
+Matches Found:  1
+--------------------------------------------------
+ENVIRONMENT METRICS
+--------------------------------------------------
+Machine Host:   DESKTOP-Ak1Tvkcx
+Executing User: hp
+Current Heap:   89.11 MB
+==================================================
