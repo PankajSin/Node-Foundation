@@ -1,0 +1,8 @@
+what are digital data units
+Digital data units are the standard measurements used to quantify the amount
+of digital information or computer storage capacity.
+Every piece of data in Node.js—whether it is a small text string,
+a large video file, or an allocated memory Buffer—is ultimately measured using
+these standardized units.🧱The Core Units (The Building Blocks)Bit (b): The smallest possible unit of data.
+It holds a single binary value, either 0 or 1.Byte (B): A group of 8 bits.
+A single byte is the minimum amount of memory needed to store a single alphanumeric character (like the letter "A") in basic text encoding.
