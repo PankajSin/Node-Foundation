@@ -1,0 +1,44 @@
+In the Unicode character set, a plane is a contiguous structural group of exactly 65,536 code points.
+
+The entire Unicode catalog is divided into 17 distinct planes (numbered Plane 0 to Plane 16), 
+creating a total storage capacity of 1,114,112 possible character slots.
+
+=======================================================================================================================================================================================================================
+🗺️ The Overview of All 17 Planes
+
+Plane Number            Formal Name                          Code Point Range                          What Lives There?
+0                      Basic Multilingual Plane (BMP)       U+0000 to U+FFFF                 95% of text: English, Spanish, Hindi, Chinese characters, currency symbols, and basic punctuation.
+
+1                      Supplementary Multilingual           U+10000 to U+1FFFF               U+1FFFFThe Fun/History Zone: Popular emojis (👋), historical scripts (Egyptian Hieroglyphs), and musical notations
+                              Plane (SMP)
+
+2                      Supplementary Ideographic            U+30000 to U+3FFFF               Additional specialized or historical scripts.
+                              Plane (SIP)                              
+
+3                      Tertiary Ideographic                 U+30000 to U+3FFFF               Additional specialized or historical scripts.                              
+                            Plane (TIP)
+
+4–13                   Unassigned                           U+40000 to U+DFFFF                Completely empty. Reserved for future human or computational scripts.
+
+14                     Supplementary Special-               U+E0000 to U+EFFFF                 Internal control characters and language tags.
+                         Purpose Plane (SSP)
+
+15–16                  Private Use Area (PUA)               U+F0000 to U+10FFFF                 Reserved exclusively for organizations or individual apps to declare custom custom symbols.
+
+=======================================================================================================================================================================================================================
+
+🔍 How to Identify a Character's Plane
+
+You can find the exact plane of any character by looking at its hexadecimal code point format. 
+Simply write the code point as 6 digits (padding with leading zeros if necessary) and look at the first two digits:
+
+Example 1: The letter 'A' (U+0041)
+Padded to 6 hex positions: U+000041
+First two digits are 00 -> It resides in Plane 0 (BMP).
+
+Example 2: The Waving Emoji '👋' (U+1F44B)
+Padded to 6 hex positions: U+01F44B
+First two digits are 01 -> It resides in Plane 1 (SMP).
+
+Q.you like to build a tool that strips 
+out everything except Plane 0 (BMP) characters to clean up text data?

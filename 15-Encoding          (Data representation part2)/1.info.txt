@@ -1,0 +1,25 @@
+how text characters map to these bytes (Encodings)?
+
+1.ASCII
+Size: Uses exactly 1 byte (7 bits active, 1 bit empty).
+Capacity: Can only represent 128 characters.
+Scope: Covers the English alphabet (uppercase and lowercase), digits 0–9, and basic punctuation.
+
+ UTF-8 (The Modern Web Standard)
+ Size: Variable-length encoding. It uses anywhere from 1 to 4 bytes per character.
+ Capacity: Can represent over 1.1 million characters.
+ Scope: Covers every language on Earth, emojis, and mathematical symbols. 
+        It is fully backwards-compatible with ASCII (English letters still take exactly 1 byte).
+
+         Step-by-Step: How "Hi 👋" Maps to Memory:---->
+============================================================================================
+ Character:        H             i     [space]         👋 (Emoji)
+               -------       -------   -------    -----------------------
+Decimal Code:     72            105      32                 128075
+               -------       -------   -------    -----------------------
+Binary (RAM):  01001000      01101001  00100000          11110000 10011111 10010001 10101011
+               -------       -------  --------    -----------------------
+Hex (Buffer):    48            69         20                F0       9F       91       AB
+               -------       -------  ---------   -----------------------
+Data size:     1 Byte        1 Byte       1 Byte           4 Bytes  (Total: 7 Bytes)
+=================================================================================================

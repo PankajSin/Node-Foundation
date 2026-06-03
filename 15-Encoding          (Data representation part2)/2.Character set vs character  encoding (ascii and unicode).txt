@@ -1,0 +1,45 @@
+To understand text representation in Node.js,  must separate the list of characters from the system used to save them [INDEX].
+
+1. The Core Difference:
+Character Set (The Dictionary): A defined collection of characters where every letter,
+ symbol, and number is assigned a unique identifier number called a Code Point. 
+It defines what characters exist, but not how they look on disk.
+
+Character Encoding (The Algorithm): The rule system that converts
+ those Code Point numbers into raw binary bytes (0s and 1s)
+ so a computer can save or transmit them.
+
+2. ASCII: The Combined System
+In the early days of computing, the set and the encoding were exactly the same thing.
+The Set: Contains 128 characters (English alphabet, numbers, and basic punctuation).
+The Encoding: Each character maps directly to exactly 1 Byte (7 bits used, 1 bit empty).
+Example: The letter H is position 72 in the set, and it is saved exactly as 01001000 (72 in binary).
+
+3. Unicode vs. UTF-8: The Modern Separated System
+ASCII was too small for global text, emojis, and symbols, so the industry created Unicode.
+
+Unicode is the Character Set (The List)
+Note: Unicode itself does not store files. It only acts as the master list.
+
+UTF-8 is the Character Encoding (The Rules)
+A utf-8 is a translation engine that converts Unicode code points into physical bytes
+
+=========================================================================================================
+🗺️ The Comparison Summary
+Character Set:       UNICODE (The Master Catalog)
+                     ┌───────────────────┬───────────────────┐
+Character:           │         H         │         👋        │
+Code Point:          │      U+0048       │      U+1F44B      │
+                     └─────────┬─────────┴─────────┬─────────┘
+                               │                   │
+Character Encoding:            ▼                   ▼
+                            UTF-8               UTF-8
+                     ┌───────────────────┬───────────────────┐
+Binary Layout:       │     01001000      │ 11110000 10011111 │
+                     │                   │ 10010001 10001011 │
+                     ├───────────────────┼───────────────────┤
+Hex representation:  │       0x48        │  0xF0 0x9F 0x91 0x8B│
+Disk footprint:      │      1 Byte       │      4 Bytes      │
+                     └───────────────────┴───────────────────┘
+
+=========================================================================================================
