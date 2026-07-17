@@ -42,3 +42,4 @@ import fs from 'node:fs/promises';
   //  create internal buffer from ram,pack data into internal buffer ,when packed ,make system call to flush entire block onto harddrive
   console.timeEnd('timer');
 })();
+// check task manager to see how uch memeory used by node specilally click details tab..
